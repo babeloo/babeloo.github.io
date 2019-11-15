@@ -10,6 +10,9 @@
 
 
 <script type='text/javascript' src='https://blog.vakyi.com/media/scripts/jquery.js'></script>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>     
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>       
+<!-- <script type="text/javascript" src="https://blog.vakyi.com/media/scripts/Valine.min.js"></script> -->
 <script type='text/javascript' src='https://blog.vakyi.com/media/scripts/jquery-migrate.min.js'></script>
         <script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
          <script >hljs.initHighlightingOnLoad();</script>
@@ -72,14 +75,16 @@
 
 
           
-        <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>            
-        <script type="text/javascript" src="https://blog.vakyi.com/media/scripts/Valine.min.js"></script>
-        <div class="comment"></div>
+        
+      </section>
+      
+      
+        <div class="section-comment"></div>
         <script>
           new Valine({
               // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
               av: AV, 
-              el: '.comment',
+              el: '.section-comment',
               lang: 'zh-cn',//设置评论语言
               emoticon_url: 'https://cloud.panjunwen.com/alu',
               emoticon_list: ["狂汗.png","不说话.png","汗.png","坐等.png","献花.png","不高兴.png","中刀.png","害羞.png","皱眉.png","小眼睛.png","暗地观察.png"],
@@ -88,7 +93,6 @@
               placeholder: '评论留言'
           });
         </script> 
-      </section>
     </main>
 </div>
 
